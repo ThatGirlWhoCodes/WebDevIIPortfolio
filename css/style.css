@@ -1,24 +1,61 @@
 /* Basic CSS resets -- leveling slight inconsistencies in browsers */
+
+/* Below is the basic font for whole site */
+
+
+/* This font is for special characters and titles */
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
 html, body {
 	margin:0px;
 	padding:0px;
 	height:100%;
+    background-color:beige;
 }
 
 html {
 		/* Standard text-settings below */
 	font-size: 1em;
     line-height: 1.4em;
-}
+} 
+  /* HEADER */
+  
+  header {
+    /*  box model properties  */
+    font-size: 1.25rem;
+  
+    /* position properties */
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+  
+    /* flex properties */
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    flex-wrap: wrap;
+  }
+  
+  header a {
+    color: #000000;
+    text-decoration: none;
+  }
+  
+  header a:hover {
+    color: #7a5318;
+  }
 
-
-
-
+  .main-menu {
+    display: none;
+    font-family:'Bebas Neue', sans-serif;;
+    position: fixed;
+    inset: 0;
+  }  
 /* Mobile First CSS: we'll design for phone sizes first, then add media queries for tablets and desktop computers later */
 
 body {
-	
-	
+
 }
 
 
