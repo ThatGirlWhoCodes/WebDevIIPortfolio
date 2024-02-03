@@ -45,12 +45,30 @@ html {
   header a:hover {
     color: #7a5318;
   }
-
-  .main-menu {
-    display: none;
+  /* top bar */
+  .top-bar {
+    background-color: var(--color-dark);
     position: fixed;
-    inset: 0;
-  } 
+    left: 0;
+    right: 0;
+    top: 0;
+    padding: 0.5rem 1rem;
+  }
+  .topbar__content {
+    max-width: var(--max-width);
+    margin-inline: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .main-menu {
+    max-width: var(--max-width);
+    margin-inline: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
   .main-menu__links {
     display: flex;
     flex-direction: column;
@@ -73,26 +91,7 @@ html {
   .main-menu__links a:hover {
     color: red;
     background-color: #111;
-  } 
-
-  /* top bar */
-  #top-bar {
-    background-color: var(--color-dark);
-    position: fixed;
-    left: 0;
-    right: 0;
-    top: 0;
-    padding: 0.5rem 1rem;
   }
-  
-  .main-menu {
-    max-width: var(--max-width);
-    margin-inline: auto;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-
 
 /* Mobile First CSS: we'll design for phone sizes first, then add media queries for tablets and desktop computers later */
 
@@ -108,12 +107,6 @@ h1{
 #container {
     font-family: 'Bebas Neue', sans-serif;
 }
-
-
-
-
-
-
 
 /* Class for making YouTube/Vimeo videos responsive */
 
