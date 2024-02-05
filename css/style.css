@@ -84,7 +84,33 @@ hr {
     margin: 1em 0px;
     padding: 0px;
 }
+footer {
+  text-align: center;
+}
 
+footer p {
+  margin: 0;
+}
+
+.back-to-top {
+  /* Add the correct position properties here. The back-to-top link should remain fixed to the viewport in the bottom right corner. There should be a little bit of space around the button so that it's not touching the sides of the viewport. */
+
+  /* position properties */
+  text-decoration: none;
+  padding: 1em;
+  background-color: #444a;
+  border-radius: 0.5em;
+  font-weight: bold;
+  line-height: 0.5;
+  font-family: "Quicksand", sans-serif;
+  font-size: 1rem;
+  color: white;
+}
+
+.back-to-top:hover {
+  background-color: #444f;
+  color: white;
+}
 
 
 /* ========================================
