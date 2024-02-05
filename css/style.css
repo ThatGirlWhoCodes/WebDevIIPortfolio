@@ -10,88 +10,18 @@ html, body {
 	margin:0px;
 	padding:0px;
 	height:100%;
-    background-color:beige;
+  background-color:beige;
 }
 
 html {
 	/* Standard text-settings below */
 	font-size: 1em;
-    line-height: 1.4em;
+  line-height: 1.4em;
 } 
   /* HEADER */
-  
-  header {
-    /*  box model properties  */
-    font-size: 1.25rem;
-  
-    /* position properties */
-    position: fixed;
-    width: 100%;
-    top: 0;
-    left: 0;
-  
-    /* flex properties */
-    display: flex;
-    justify-content: space-between;
-    align-items: baseline;
-    flex-wrap: wrap;
-  }
-  
-  header a {
-    color: #000000;
-    text-decoration: none;
-  }
-  
-  header a:hover {
-    color: #7a5318;
-  }
-  /* top bar */
-  .top-bar {
-    background-color: var(--color-dark);
-    position: fixed;
-    left: 0;
-    right: 0;
-    top: 0;
-    padding: 0.5rem 1rem;
-  }
-  .topbar__content {
-    max-width: var(--max-width);
-    margin-inline: auto;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-  
-  .main-menu {
-    max-width: var(--max-width);
-    margin-inline: auto;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-  .main-menu__links {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    width: 100%;
-    height: 100%;
-    background-color: var(--color-dark);
-    text-align: center;
-    font-size: 2rem;
-  }
-  
-  .main-menu__links a {
-    text-decoration: none;
-    color: var(--color-light);
-    font-weight: 500;
-    padding: 2rem;
-    transition: color 0.125s, background-color 0.125s;
-  }
-  
-  .main-menu__links a:hover {
-    color: red;
-    background-color: #111;
-  }
+header{
+
+}
 
 /* Mobile First CSS: we'll design for phone sizes first, then add media queries for tablets and desktop computers later */
 
@@ -100,12 +30,7 @@ body {
 
 }
 
-h1, h2, h3{
-    font-family: 'Bebas Neue', sans-serif;
-}
-
 #container {
-    padding: 5rem;
     font-family: 'Bebas Neue', sans-serif;
 }
 
