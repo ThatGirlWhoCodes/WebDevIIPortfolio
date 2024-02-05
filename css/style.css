@@ -73,7 +73,14 @@ figure.responsive iframe {
     height: 100%;
 }
 
-
+/* BIO CSS */
+form {
+  width: 60vw;
+  max-width: 25%;
+  min-width: 50%;
+  margin: 0 auto;
+  padding-bottom: 2em;
+}
 
 /* A better looking default horizontal rule */
 hr {
