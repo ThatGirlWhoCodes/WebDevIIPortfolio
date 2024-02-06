@@ -12,7 +12,7 @@ html, body {
 	height:100%;
   background-color:rgb(220, 217, 252);
 }
-img{
+figure img{
   width: 5%;
 }
 html {
@@ -24,7 +24,10 @@ html {
 header{
   font-family: 'Courier New', Courier, monospace;
 }
-
+nav ul {
+  list-style: none;
+  padding-left: 0px;
+}
 /* Mobile First CSS: we'll design for phone sizes first, then add media queries for tablets and desktop computers later */
 
 body {
