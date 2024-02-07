@@ -1,16 +1,10 @@
 /* Basic CSS resets -- leveling slight inconsistencies in browsers */
-
-/* Below is the basic font for whole site */
-
-
-/* This font is for special characters and titles */
 @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;800&display=swap');
 
 html, body {
 	margin:0px;
 	padding:0px;
 	height:100%;
-  background-color:rgb(220, 217, 252);
 }
 figure img{
   width: 5%;
@@ -19,12 +13,14 @@ html {
 	/* Standard text-settings below */
 	font-size: 1em;
   line-height: 1.4em;
+  font-family: 'Orbitron', Impact, sans-serif;
+
 } 
 /* Mobile First CSS: we'll design for phone sizes first, then add media queries for tablets and desktop computers later */
 
 body {
   /* this is the background image of me */
-  background: red url('/img/profile.png') fixed no-repeat center;
+  background: red;
   background-size: cover;
 }
 #container{
@@ -37,11 +33,14 @@ header h1{
   font-size: 4.2vw;
   font-family: 'Orbitron', Impact, sans-serif;
   font-weight: 800;
+  color: white;
 }
 header h2{
   font-size: 3vw;
   font-family: 'Orbitron', Impact, sans-serif;
   font-weight: 400;
+    color: white;
+
 }
 
   header, footer{
@@ -54,6 +53,7 @@ header h2{
   main img{
     width: 100%;
   }
+  
   nav ul {
     list-style: none;
     padding-left: 0px;
@@ -64,7 +64,7 @@ header h2{
     text-decoration: none;
     color: white;
     text-align: center;
-    font-size: 2em;
+    font-size: 1.25em;
     padding: 0.35em;
     background-color: rgba(0,0,0, 0.4);
     margin: 5px;
@@ -123,14 +123,6 @@ You can adjust the min-width numbers below, and add as many new media queries as
 
 /* Minimum width for laptops. */
 @media all and (min-width: 769px) {
-	
-
-	/* nav ul{
-    display: flex;
-  }
-	nav li{
-    flex: 1 1 175px;
-  } */
 	
   #two-column{
     display: flex;
