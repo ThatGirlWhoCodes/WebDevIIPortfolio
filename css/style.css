@@ -23,17 +23,31 @@ html {
 /* Mobile First CSS: we'll design for phone sizes first, then add media queries for tablets and desktop computers later */
 
 body {
-    font-family: 'Bebas Neue', sans-serif;
-
+  /* this is the background image of me */
+  background: red url('/img/profile.png') fixed no-repeat center;
+  background-size: cover;
 }
 #container{
 
 }
   /* HEADER */
-  header{
+
+header h1{
+  /* number is percentage of vp width, this steches font if frame is re-scaled */
+  font-size: 5vw;
+}
+
+  header, footer{
     font-family: 'Courier New', Courier, monospace;
     padding: 1em;
 
+  }
+  header figure {
+    margin: 0px;
+    
+  }
+  main img{
+    width: 100%;
   }
   nav ul {
     list-style: none;
