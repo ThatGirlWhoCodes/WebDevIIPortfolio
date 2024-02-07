@@ -4,7 +4,7 @@
 
 
 /* This font is for special characters and titles */
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;800&display=swap');
 
 html, body {
 	margin:0px;
@@ -34,13 +34,18 @@ body {
 
 header h1{
   /* number is percentage of vp width, this steches font if frame is re-scaled */
-  font-size: 5vw;
+  font-size: 4.2vw;
+  font-family: 'Orbitron', Impact, sans-serif;
+  font-weight: 800;
+}
+header h2{
+  font-size: 3vw;
+  font-family: 'Orbitron', Impact, sans-serif;
+  font-weight: 400;
 }
 
   header, footer{
-    font-family: 'Courier New', Courier, monospace;
     padding: 1em;
-
   }
   header figure {
     margin: 0px;
@@ -55,13 +60,22 @@ header h1{
   }
 
   nav ul li{
-    border: 1px solid black;
   }
   nav ul li a{
-    border: 1px solid red;
+    border: 1px solid black;
     display: block;
-
+    text-decoration: none;
+    color: white;
+    text-align: center;
+    font-size: 2em;
+    padding: 0.35em;
+    background-color: rgba(0,0,0, 0.4);
+    margin: 5px;
   }
+  nav ul li a:hover{
+    background: black;
+  }
+
 /* Class for making YouTube/Vimeo videos responsive */
 
 figure.responsive {
@@ -130,6 +144,9 @@ You can adjust the min-width numbers below, and add as many new media queries as
   main{
     flex: 2;
   }
+  nav ul li a{
+    font-size: 1em;
+  }
 
 } /* closes 769px+ */
 
@@ -139,7 +156,9 @@ You can adjust the min-width numbers below, and add as many new media queries as
 @media all and (min-width: 1024px) {
 	
 	
-	
+  main{
+    flex: 3;
+  }
 	
 } /* closes 1024px+ */
 
