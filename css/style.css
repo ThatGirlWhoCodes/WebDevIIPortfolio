@@ -20,21 +20,34 @@ html {
 	font-size: 1em;
   line-height: 1.4em;
 } 
-  /* HEADER */
-header{
-  font-family: 'Courier New', Courier, monospace;
-}
-nav ul {
-  list-style: none;
-  padding-left: 0px;
-}
 /* Mobile First CSS: we'll design for phone sizes first, then add media queries for tablets and desktop computers later */
 
 body {
     font-family: 'Bebas Neue', sans-serif;
 
 }
+#container{
 
+}
+  /* HEADER */
+  header{
+    font-family: 'Courier New', Courier, monospace;
+    padding: 1em;
+
+  }
+  nav ul {
+    list-style: none;
+    padding-left: 0px;
+  }
+
+  nav ul li{
+    border: 1px solid black;
+  }
+  nav ul li a{
+    border: 1px solid red;
+    display: block;
+
+  }
 /* Class for making YouTube/Vimeo videos responsive */
 
 figure.responsive {
@@ -51,15 +64,6 @@ figure.responsive iframe {
     left: 0px;
     width: 100%;
     height: 100%;
-}
-
-/* BIO CSS */
-form {
-  width: 60vw;
-  max-width: 25%;
-  min-width: 50%;
-  margin: 0 auto;
-  padding-bottom: 2em;
 }
 
 /* A better looking default horizontal rule */
@@ -95,9 +99,24 @@ You can adjust the min-width numbers below, and add as many new media queries as
 /* Minimum width for laptops. */
 @media all and (min-width: 769px) {
 	
+
+	/* nav ul{
+    display: flex;
+  }
+	nav li{
+    flex: 1 1 175px;
+  } */
 	
-	
-	
+  #two-column{
+    display: flex;
+  }
+  nav{
+    flex: 1;
+  }
+  main{
+    flex: 2;
+  }
+
 } /* closes 769px+ */
 
 
