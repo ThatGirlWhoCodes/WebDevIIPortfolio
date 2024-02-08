@@ -52,11 +52,29 @@ header h2{
   }
   main img{
     width: 100%;
+    padding: 5rem 0rem 5rem 0rem;
   }
-  
+main p{
+  margin: .5em;
+}
   nav ul {
     list-style: none;
     padding-left: 0px;
+  }
+  #click-here{
+    text-decoration: none;
+  }
+  a{
+    text-decoration: none;
+    color: black;
+  }
+  a:hover{
+    text-decoration: none;
+    color: white;
+  }
+  #disclaimer{
+    padding: 2rem 0rem 4rem 0rem;
+
   }
   nav ul li a{
     border: 1px solid black;
