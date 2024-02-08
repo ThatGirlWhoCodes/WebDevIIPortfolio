@@ -45,7 +45,7 @@ header h2{
 
 }
 
-  header, footer{
+header, footer{
     padding: 1em;
   }
   header figure {
@@ -67,15 +67,16 @@ header h2{
   }
   main img{
     width: 100%;
-    padding: 5rem 0rem 5rem 0rem;
   }
 main p{
-  margin: .5em;
-  padding: 5px;
+  margin: 1em;
+  padding: 8px;
 }
 main p b{
   font-family: 'Rock Salt', cursive;
   font-size: 2rem;
+  margin: 1em;
+  padding: 8px;
 }
   nav ul {
     list-style: none;
@@ -153,8 +154,6 @@ You can adjust the min-width numbers below, and add as many new media queries as
 @media all and (min-width: 481px) {
 	
 	
-	
-	
 } /* closes 481px+ */
 
 
@@ -174,7 +173,7 @@ You can adjust the min-width numbers below, and add as many new media queries as
   nav ul li a{
     font-size: 1em;
   }
-
+ 
 } /* closes 769px+ */
 
 
@@ -186,7 +185,6 @@ You can adjust the min-width numbers below, and add as many new media queries as
   main{
     flex: 3;
   }
-	
 } /* closes 1024px+ */
 
 
