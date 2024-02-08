@@ -1,5 +1,6 @@
 /* Basic CSS resets -- leveling slight inconsistencies in browsers */
 @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rock+Salt&display=swap');
 
 html, body {
 	margin:0px;
@@ -23,6 +24,7 @@ body {
   background: red;
   background-size: cover;
 }
+
 #container{
 
 }
@@ -50,12 +52,30 @@ header h2{
     margin: 0px;
     
   }
+  #social-media-icons{
+    display: flex;
+    margin: 0 auto;
+  }
+  #social-media-icons a{
+    display: block;
+    margin:  0 5px;
+  }
+  #social-media-icons img{
+    padding-left: 1em;
+    width: 30px;
+    height: 30px;
+  }
   main img{
     width: 100%;
     padding: 5rem 0rem 5rem 0rem;
   }
 main p{
   margin: .5em;
+  padding: 5px;
+}
+main p b{
+  font-family: 'Rock Salt', cursive;
+  font-size: 2rem;
 }
   nav ul {
     list-style: none;
