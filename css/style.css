@@ -42,6 +42,7 @@ header h2{
 
 header, footer{
     padding: 1em;
+    color: #fff;
   }
   header figure {
     margin: 0px;
@@ -63,9 +64,14 @@ header, footer{
   main img{
     width: 100%;
   }
+  figcaption{
+    font-size: .65rem;
+    color: white;
+  }
 main p{
   margin: 1em;
   padding: 8px;
+  color: #fff;
 }
 main p b{
   font-family: 'Rock Salt', cursive;
@@ -80,17 +86,17 @@ main p b{
   #click-here{
     text-decoration: none;
   }
+#click-here a:hover{
+  color: black;
+}
   a{
-    text-decoration: none;
-    color: black;
-  }
-  a:hover{
     text-decoration: none;
     color: white;
   }
   #disclaimer{
-    padding: 2rem 0rem 4rem 0rem;
-
+    font-size: 1rem;
+    padding-top: 4rem;
+    text-align: center;
   }
   nav ul li a{
     border: 1px solid black;
