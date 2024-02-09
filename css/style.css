@@ -46,7 +46,9 @@ header, footer{
     margin: 0px;
   }
   header p{
-    font-size: .75rem;
+  font-size: 2vw;
+  font-family: 'Orbitron', Impact, sans-serif;
+  color: white;
   }
   #social-media-icons{
     display: flex;
@@ -101,15 +103,16 @@ main p b{
   #font-change{
     font-family: 'Rock Salt', cursive;
     font-size: 2rem;
-    line-height: 2.5rem;
+    line-height: 1.5;
     text-align: center;
+    padding-top: 3rem;
   }
 .gallery{
   font-size: .75rem;
   display: grid;
   grid-template-columns: repeat(2, 2fr);
   gap: 15px;
-  padding: 15rem 5rem 15rem 5rem;
+  padding: 0rem 5rem 15rem 5rem;
 }
 .gallery img{
   width: 100%;
