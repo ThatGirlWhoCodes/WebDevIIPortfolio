@@ -38,7 +38,6 @@ header h2{
   font-weight: 400;
     color: white;
 }
-
 header, footer{
     padding: 1em;
     color: #fff;
@@ -99,6 +98,18 @@ main p b{
     padding-top: 4rem;
     text-align: center;
   }
+.gallery{
+  display: grid;
+  grid-template-columns: repeat(2, 2fr);
+  gap: 15px;
+  padding: 15rem 5rem 15rem 5rem;
+}
+.gallery img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border:10px solid black;
+}
   nav ul li a{
     border: 1px solid black;
     display: block;
