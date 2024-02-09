@@ -15,7 +15,6 @@ html {
 	font-size: 1em;
   line-height: 1.4em;
   font-family: 'Orbitron', Impact, sans-serif;
-
 } 
 /* Mobile First CSS: we'll design for phone sizes first, then add media queries for tablets and desktop computers later */
 
