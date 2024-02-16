@@ -1,0 +1,276 @@
+/*FONTS*/
+@import url("https://use.typekit.net/cdu5eha.css");
+@import url("https://use.typekit.net/cdu5eha.css");
+
+
+/* Basic CSS resets -- leveling slight inconsistencies in browsers */
+html, body {
+	margin:0px;
+	padding:0px;
+	height:100%;
+}
+
+html {
+	/* Standard text-settings below */
+	font-size: 1em;
+    line-height: 1.4em;
+}
+
+
+/* HEADER NAV ON SPECIFIC PAGES */
+.main-nav{
+  
+    background-color: red;
+    border-radius: 45%;
+
+    /* position properties */
+    position:relative;
+    width: 100%;
+    top: 0;
+    left: 0;
+  
+    /* flex properties */
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    flex-wrap: wrap;
+  }
+  
+  header a {
+    color: #eee;
+    text-decoration: none;
+  }
+  
+  header a:hover {
+    color: gold;
+  }
+
+/* Mobile First CSS: we'll design for phone sizes first, then add media queries for tablets and desktop computers later */
+
+body {
+	background-color: black;
+}
+u{
+    color: green;
+    opacity: 40%;
+}
+
+#resName{
+    font-family: "anisette-std-petite-2", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    color: gold;
+    font-size: 5rem;
+    align-items: center;
+    text-align: center;
+}
+h1{
+    font-family: "anisette-std-petite-2", sans-serif;
+    text-align: center;
+    font-weight: 700;
+    font-style: normal;
+    color: whitesmoke;
+}
+h2{
+    color: gold;
+    font-family: "anisette-std-petite-2", sans-serif;
+    text-align: center;
+    font-weight: 700;
+    font-style: normal;
+}
+section h1{
+    padding: 1em;
+    text-align: center;
+}
+section a{
+    color: red;
+    font-size: large;
+}
+section a:hover{
+   color: white; 
+}
+section p a{
+    text-decoration: none;
+}
+#container {
+	width:90%;
+	margin:auto;
+}
+figure {
+	margin:0px;
+}
+section p{
+    color: white;
+}
+figure img {
+	width:100%;
+    height: auto;
+}
+
+.mobile{
+    font-family: "paroli", sans-serif;
+    font-weight: 100;
+    font-style: 50;
+    color: white;
+    font-size: 1.5rem;
+    text-align: center;
+}
+.desktop{
+    display: none;
+    font-family: "paroli", sans-serif;
+    font-weight: 100;
+    font-style: 50;
+    color: white;
+    font-size: 1.5rem;
+    text-align: center;
+}
+nav section {
+	border:1px solid gold;
+    margin-bottom: 15px;
+}
+section p{
+    padding: 1rem;
+}
+footer{
+    color: white;
+    text-align: center;
+    padding: 1rem 1rem 1rem 0rem;
+    font-family: "paroli", sans-serif;
+    font-weight: 50;
+    font-style: 40;
+}
+
+p{
+    color: white;
+    text-align: center;
+}
+
+.center-alignment{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate( -50%, -50% );
+    text-align: center;
+    color: black;
+    font-weight: bold;
+    padding-top: 22.5rem;
+}
+
+
+/* Class for making YouTube/Vimeo videos responsive */
+
+figure.responsive {
+    position: relative;
+    padding-bottom: 56.25%;  /* 16:9 */
+    height: 0px;
+    overflow: hidden;
+    max-width: 100%;
+}
+
+figure.responsive iframe {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+}
+
+
+
+/* A better looking default horizontal rule */
+hr {
+    display: block;
+    height: 1px;
+    border: 0px;
+    border-top: 1px solid #ccc;
+    margin: 1em 0px;
+    padding: 0px;
+}
+
+
+
+/* ========================================
+MEDIA QUERIES!
+You can adjust the min-width numbers below, and add as many new media queries as you need.
+======================================== */
+
+/* Minimum width for iPads and tablets.  */
+@media all and (min-width: 481px) {
+	figure img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 90%;
+        padding: 1rem;
+    }
+	
+} /* closes 481px+ */
+
+
+
+/* Minimum width for laptops. */
+@media all and (min-width: 769px) {
+	
+    figure img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 75%;
+        padding: 1rem;
+    }
+    .center-alignment{
+        text-align: center;
+    }
+	#container {
+		width:80%;
+	}
+	.mobile{
+        display: none;
+    }
+    .desktop{
+        display: block;
+    }
+    nav{
+        display: grid;
+        /* grid-template-columns: auto auto; */
+        column-gap: 15px;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    /*nav{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    nav section{
+        flex: 0 1 48%;
+        /*^^^this is more elegant than using floats*/
+    
+} /* closes 769px+ */
+
+
+
+/* Minimum width for desktop screens. */
+@media all and (min-width: 1024px) {
+	
+    figure img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 50%;
+        padding: 1rem;
+    }
+
+	nav section{
+        width: 0 1 32%;
+    }
+	nav{
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+	
+} /* closes 1024px+ */
+
+
+
+
+
