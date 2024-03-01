@@ -1,6 +1,9 @@
 /* fonts */
 @import url('https://fonts.googleapis.com/css2?family=Audiowide&display=swap');
-
+@font-face {
+  font-family: 'Intro Rust';
+  src: url('/I'), format();
+}
 
 /* Basic CSS resets -- leveling slight inconsistencies in browsers */
 html, body {
@@ -67,6 +70,11 @@ header a:hover {
 }
 .logo {
   font-size: 1.5rem;
+}
+.main-nav{
+  font-family: "Audiowide", sans-serif;
+    font-weight: 400;
+    font-style: normal;
 }
 #p1, #p2{
   text-align: center;
@@ -158,9 +166,6 @@ You can adjust the min-width numbers below, and add as many new media queries as
 
 /* Minimum width for desktop screens. */
 @media all and (min-width: 1024px) {
-	
-	
-	
 	
 } /* closes 1024px+ */
 

@@ -53,7 +53,7 @@
   <script>
 $(document).ready(function() {
   $('.page-changing-button').click(function(){
-    $('header, footer, .logo').css({
+    $('header, footer, .logo, .main-nav').css({
     'background': 'linear-gradient(to bottom right, #FFEA00, #454B1B)',
     'font-family': 'Courier New',
   });
@@ -67,6 +67,11 @@ $(document).ready(function() {
     $('#p1').text("Yo, let's all come together and squash bullying right now!");
     $('#p2').text("Hey folks, cyberbullying? Yeah, it's no joke, especially for us youngsters in this digital era. It messes with your head big time. But hey, if we spread some love and understanding online, we can totally shut down this cyberbullying nonsense and make the internet a chill and welcoming place for everyone.");
   });//end of p content
+  $('.page-changing-button').click(function(){
+    $('#p2').css({
+    'font-family': 'Cour',
+    });
+  }) //end of body content
   });
 </script>
 
