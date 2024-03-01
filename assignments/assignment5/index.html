@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+	
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	
+	<title>Byte-Bye Bully&#39;s Coalition</title>
+	
+	<link rel="stylesheet" href="css/style.css">	
+	
+</head>
+
+
+<body>
+  <div id="container">
+    <header>
+      <div class="logo">
+        <a href="#">Byte-Bye Bully&#39;s Coalition</a>
+      </div>
+      <nav class="main-nav">
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Contact</a>
+        <a href="#">Donate</a>
+      </nav>
+    </header>
+    <main>
+      <img id="logo" src="/img/logo.PNG" alt="faux logo by me">
+      <hr>
+        <p id="p1">Help us stand up against bullying today!</p>
+        <p id="p2">Cyberbullying is a serious issue that affects many individuals, especially young people, in today's digital age. It can have devastating consequences on mental health and well-being. By raising awareness and promoting kindness and empathy online, we can work together to combat cyberbullying and create a safer and more inclusive online community.</p>
+        <img src="img/stopCBgraphic.PNG" alt="stop bullying graphic by me">
+    </main>
+
+    <footer>
+      <div id="page-changing-button-div">
+        <button class="page-changing-button">
+          <img src="img/peacesign.png" alt="peace sign by me">
+        </button>
+      </div>
+      <p>&#169; Gianna G. Dimperio</p>
+      
+    </footer>
+
+  </div><!-- close id "container" -->
+  <!-- Link to jQuery on Google CDN-->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+  <!-- Write your jQuery code inside of the .ready() function below -->
+  <script>
+$(document).ready(function() {
+  $('.page-changing-button').click(function(){
+    $('header, footer, .logo').css({
+    'background': 'linear-gradient(to bottom right, #FFEA00, #454B1B)',
+    'font-family': 'Courier New',
+  });
+  }) //end of header footer content
+  $('.page-changing-button').click(function(){
+    $('body').css({
+    'background': 'linear-gradient(to bottom right, #FFEA00, #454B1B)',
+    'font-family': 'Courier New',
+    'color': 'white',
+  });
+  }) //end of body content
+  $('.page-changing-button').click(function(){
+    $('#p1').text("Yo, let's all come together and squash bullying right now!");
+    $('#p2').text("Hey folks, cyberbullying? Yeah, it's no joke, especially for us youngsters in this digital era. It messes with your head big time. But hey, if we spread some love and understanding online, we can totally shut down this cyberbullying nonsense and make the internet a chill and welcoming place for everyone.");
+  });//end of p content
+  });
+</script>
+
+</body>
+	
+</html> 
