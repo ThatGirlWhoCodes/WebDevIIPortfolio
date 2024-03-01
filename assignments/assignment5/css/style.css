@@ -22,11 +22,6 @@ html {
 }
 #logo{
     padding: 100px;
-    
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 20%;
 }
 main img{
     display: block;
@@ -73,7 +68,12 @@ header a:hover {
 .logo {
   font-size: 1.5rem;
 }
-
+#p1, #p2{
+  text-align: center;
+  font: 1em sans-serif;
+  padding: 1px;
+  color:black;
+}
 header, footer{
     background-color: #2d2dfd;
     color: #eee;
