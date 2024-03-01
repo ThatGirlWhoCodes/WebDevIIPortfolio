@@ -1,9 +1,11 @@
 /* fonts */
 @import url('https://fonts.googleapis.com/css2?family=Audiowide&display=swap');
+/* 
 @font-face {
-  font-family: 'Intro Rust';
-  src: url('/I'), format();
-}
+  font-family: 'IntroRust';
+  src: url('assignments/assignment5/Font/introheadr-base-webfont.woff'), format('woof'),
+  url('assignments/assignment5/Font/introheadr-base-webfont.woff2'), format('woof2');
+} */
 
 /* Basic CSS resets -- leveling slight inconsistencies in browsers */
 html, body {
