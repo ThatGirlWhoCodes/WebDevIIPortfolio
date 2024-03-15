@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+	
+	<meta charset="utf-8">
+	
+	<!-- This matches the CSS width to the device width, and prevents forced overview without disabling zooming -->
+	<meta name="viewport" content="width=device-width, initial-scale=1"> 
+	
+	<title>Italian American Subject Title Here</title>
+	
+	<link rel="stylesheet" href="style.css">	
+	
+</head>
+
+
+<body>
+
+  <div id="container">
+
+
+<header>
+  
+  <!-- <h2>Italian &amp; Italian&dash;American News</h2> -->
+  <a id="logo" href="#">👑Audace MAG</a>
+  <nav id="menu">
+    <div class="menu-buttons">
+      <a href="index.html">Home</a>
+      <a href="#">News</a>
+      <a href="#">About</a>
+      <a href="#">Conact</a>
+    </div>
+  </nav>
+  </header>
+
+  <!-- image one div -->
+  <div id="part1">
+    <h1>Italian&dash;American Heritage Month</h1>
+  </div> 
+ 
+<section id="one">
+  <p id="p1"> <b>And the question is:</b> Why has it not been solidified sooner? This is something I wonder every day. As a fellow Italian-American, I have an internal urge to want to spread recognition and awareness. I take great pride in my culture and knowing that its one that not many learn about, or celebrate, makes me want to be one of the people that brings light to our beautiful, hardworking, and family-orientated culture.</p>
+  <p id="p2">Italian-American Heritage and Culture should be recognized and acknowledged by the people of the United States. October is National Italian Heritage and Culture Month. Curated to salute the Italian and Italian-American community and to show appreciation for their culture and heritage which has immensely enhanced the lives of the people of the United States as well as globally.  Therefore, it would only be proper to observe October as Italian Culture and Heritage Month. </p>
+  </section>
+ 
+
+  <!-- image two div -->
+    <div id="part2"><!--<p>***Brief message***</p>-->
+    <!-- <h1>Hello!</h1> -->
+    
+    </div>
+
+    <section id="two">
+  
+    <p><b>Italian Heritage and Culture Month was just recognized on January 1, 2022, as a celebratory occasion, but only in Ohio.</b></p>
+    <p>	On October 11, 2022, U.S. Congressman Josh Gottheimer (NJ-5) is working on resolving this issue with the U.S. House of Representatives. This lead will help urge those in the U.S. to honor Italian American Heritage and Culture, and recognize the contributions Italians have made to the U.S. “Italian immigrants who journeyed to America, and the generations of their families since, are a perfect example of what makes the United States the greatest country in the world. Very few Italian immigrants lived luxurious lives, but they never complained in their pursuit of the American dream. And if you take one look around, it’s an understatement to say that Italian Americans have succeeded in achieving a better life and making both America and our great state even better places to live,” said U.S. Congressman Josh Gottheimer (NJ-5).</p>
+    <p>On this day, March 14, is the anniversery of the largest mass lyching in America towards Italian&dash;Americans in New Orleans</p>
+    <p><b>In Memorium:</b></p>
+    </section>
+
+      <!-- image three div -->
+      <div id="part3"></div>
+      <section id="three">
+        <p>For more visit:</p>
+        <ul>
+          <li><a href="https://www.jccia.com/">Joint Civic Community of Italian Americans</a></li>
+          <li><a href="https://www.niaf.org/">National Italian American Foundation</a></li>
+          <li><a href="https://www.hardcoreitalians.com/">Hardcore Italians</a></li>
+          <li><a href="https://www.osdia.org/">Order of Sons and Daughters of Italy in America</a></li>
+        </ul>
+        </section>
+              <!-- image four div -->
+      <div id="part4">
+        <h1>Mark your calender for this years Bocce Ball Tournement, stay tuned...</h1>
+      </div>
+<footer>
+  <p>Image one, three and four are original, image two is chatGPT curated.</p>
+  <p>&copy; 2024 Gianna G Dimperio</p>
+</footer>
+      <a href="#TOP" class="back-to-top">&uarr;</a>
+  </div><!-- close "container" -->
+  
+  <!-- Link to jQuery on Google CDN-->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  
+  
+  <!-- Container for your jQuery code -->
+  <script>
+
+$(document).ready(function() {
+
+$(window).scroll(function(){
+
+var windowPosition = $(window).scrollTop();
+
+//keyframe changes
+if(windowPosition > 1300){
+$('section').addClass('red');
+}else{
+  $('section').removeClass('red');
+}
+
+//keyframe textChange
+if(windowPosition>1500){
+  $('h1').addClass('white');
+}else{
+  $('h1').removeClass('white');
+}
+
+//keyframe headerFooterColorChange
+if(windowPosition>1400){
+  $('header, footer').addClass('headerFooterchange');
+}else{
+  $('header, footer').removeClass('headerFooterchange');
+}
+
+//keyframe img change
+if(windowPosition>1350){
+  $('#part3').addClass('imgChange');
+}else{
+  $('#part3').removeClass('imgChange');
+}
+
+
+// var elementOffset = $('#one').focus().top
+// var currentElementOffset=(elementOffset - windowPosition);
+// if(currentElementOffset<40){
+// $('#one').css('display', 'inline').focusin(2000);
+// }else{
+//   $('#one').focusout(2000);
+// }
+
+// if(windowPosition>1300){
+//   $('section').css('background', 'red');
+// }
+// else{
+//   ('section').css('background', 'white');
+// }
+});
+}); //close .ready()
+</script>
+
+</body>
+	
+</html> 

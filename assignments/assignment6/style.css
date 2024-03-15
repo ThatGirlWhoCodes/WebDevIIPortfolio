@@ -1,0 +1,245 @@
+/* Basic CSS resets -- leveling slight inconsistencies in browsers */
+html, body {
+	margin:0px;
+	padding:0px;
+	height:100%;
+}
+
+html {
+		/* Standard text-settings below */
+	font-size: 1em;
+    line-height: 1.4em;
+}
+
+/* "Mobile first" CSS: we'll design for phone sizes first, then add media queries for tablets and desktop computers later */
+
+body {
+	
+	
+}
+
+body a{
+	text-decoration: none;
+	color: white;
+}
+.menu-buttons a:hover{
+	color: red;
+}
+
+#container {
+	height:100%;
+}
+
+
+/* The two portions of the page in black, with yellow text */
+header, section {
+	background:black;
+	padding:25px;
+	color:white;
+}
+header{
+	display: flex;
+	justify-content: space-between;
+	align-items: last baseline;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+
+}
+  
+  header a:hover {
+	text-decoration: none;
+	color: green;
+  }
+  footer{
+	color: white;
+	text-align: center;
+  }
+  #logo {
+	font-size: 2rem;
+  }
+  
+  #p1{
+	float: right;
+	width: 50%;
+	margin: 5px;
+  }
+  #p2{
+	width: 50%;
+	margin: 5px;
+  }
+
+#three ul a:hover{
+	color: #363E34;
+}
+footer{
+	background-color: black;
+	box-sizing: border-box;
+	margin: 0;
+	padding: 3px;
+}
+
+/* The three div's with cat background images */
+#part1, #part2, #part3, #part4 {
+	/*height:700px;*/
+	height:100%;
+}
+
+
+#part1 {
+	background:url('img/italianflag.png') fixed center no-repeat;
+	background-size:cover;
+}
+
+#part2 {
+	background:url('img/italianAmericanEssence.png') fixed center no-repeat;
+	background-size:cover;
+}
+
+#part3 {
+	background:url('img/LynchingAnnyversary.png') fixed center no-repeat;
+	background-size:cover;
+}
+#part4 {
+	background:url('img/ColumbusClassic.png') fixed center no-repeat;
+	background-size:cover;
+	position:relative;
+
+}
+
+#part1 h1 {
+	color:black;
+	font-size:90px;
+	line-height:110px;
+	position:absolute;
+	left:50%;
+	top:50%;
+	margin-left:-182px;
+	margin-top:-100px;
+}
+#part4 h1{
+	color: white;
+	font-size: 30px;
+	position: absolute;
+	left: 50%;
+	right: 0;
+	top: 75%;
+}
+
+b:hover{
+	color: #363E34;
+}
+
+/* section background change */
+@keyframes changes {
+from{background: black;}
+to{background: red;}
+}
+.red{
+	animation: changes 1.5s;
+	animation-fill-mode: forwards;
+}
+
+/* last image text change */
+@keyframes textChange {
+	from{color:white;}
+	to{color: black;}
+}
+.white{
+	animation: textChange 5s;
+	animation-fill-mode: backwards;
+}
+
+/* header/footer color change */
+@keyframes headerFooterColorChange{
+	from{background: black;}
+	to{background: red;}
+}
+.headerFooterchange{
+	animation: headerFooterColorChange;
+	animation-fill-mode: forwards;
+}
+
+/* img3 animation  */
+@keyframes imgChange{
+	from{width: 100%;}
+	to{width: 35%;}
+}
+.imgChange{
+	animation: imgChange 3s ;
+	animation-fill-mode: alternate;
+}
+
+/* A better looking default horizontal rule */
+hr {
+    display: block;
+    height: 1px;
+    border: 0px;
+    border-top: 1px solid #ccc;
+    margin: 1em 0px;
+    padding: 0px;
+}
+
+
+
+/* ========================================
+MEDIA QUERIES!
+======================================== */
+
+
+/* New CSS for tablet sizes.
+You can change the pixel number below */
+@media all and (min-width: 768px) {
+	/* #part1 h1 {
+		color:black;
+		font-size:50px;
+		line-height:100px;
+		position:absolute;
+		left:35%;
+		top:50%;
+		margin-left:-182px;
+		margin-top:-100px;
+	} */
+	
+} /* closes 768px+ */
+
+
+
+
+/* New CSS for desktop sizes.
+You can change the pixel number below */
+@media all and (min-width: 1024px) {
+	
+	/* #container{
+		width: 1000px;
+	} */
+
+	#part1 h1 {
+		color:black;
+		font-size:100px;
+		line-height:140px;
+		position:absolute;
+		left:35%;
+		top:50%;
+		right: 25%;
+		margin-left:-182px;
+		margin-top:-100px;
+	}
+
+	#part4 h1{
+		color: white;
+		font-size: 30px;
+		position: absolute;
+		left: 80%;
+		right: 0;
+		top: 75%;
+	}
+	
+	
+} /* closes 1024px+ */
+
+
+
+
+
