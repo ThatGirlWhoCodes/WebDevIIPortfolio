@@ -1,11 +1,7 @@
 /* fonts */
 @import url('https://fonts.googleapis.com/css2?family=Audiowide&display=swap');
-/* 
-@font-face {
-  font-family: 'IntroRust';
-  src: url('assignments/assignment5/Font/introheadr-base-webfont.woff'), format('woof'),
-  url('assignments/assignment5/Font/introheadr-base-webfont.woff2'), format('woof2');
-} */
+
+/* This imports the Audiowide font from Google Fonts. It will be used for the logo and main navigation elements. */
 
 /* Basic CSS resets -- leveling slight inconsistencies in browsers */
 html, body {
@@ -15,36 +11,50 @@ html, body {
     color: #929191;
 }
 
+/* This sets the margin and padding of the html and body elements to 0, and sets their height to 100%. The color property sets the text color for the entire document. */
+
 html {
 		/* Standard text-settings below */
     line-height: 1.4em;
 }
+
+/* This sets the line-height for all text elements within the html element. */
+
 .logo{
     font-size: .5rem;
     font-family: "Audiowide", sans-serif;
     font-weight: 400;
     font-style: normal;
 }
+
+/* This sets the font size, family, weight, and style for the logo class. */
+
 #logo{
     padding: 100px;
 }
+
+/* This sets the padding for the logo ID. */
+
 main img{
     display: block;
     margin-left: auto;
     margin-right: auto;
     width: 50%;
 }
+
+/* This sets the display property to block, and centers the main image element by setting the margin-left and margin-right properties to auto. The width property is set to 50%. */
+
 footer img{
   max-width: 10%;
   width:50%;
 }
 
+/* This sets the maximum width and width properties for the footer image element. */
+
 /* Mobile First CSS: we'll design for phone sizes first, then add media queries for tablets and desktop computers later */
 
-/* body {
-	
-	
-} */
+/* This is a mobile-first approach, where the design is optimized for phone sizes first, and then adjusted for larger screens using media queries. */
+
 header{
   /*  box model properties  */
   font-size: 1.25rem;
@@ -62,116 +72,79 @@ header{
   flex-wrap: wrap;
 }
 
+/* This sets the font size, position, and flex properties for the header element. */
+
 header a {
   color: #eee;
   text-decoration: none;
 }
 
+/* This sets the color and text-decoration properties for all anchor elements within the header. */
+
 header a:hover {
   color: #ec0000;
 }
+
+/* This sets the color property for all anchor elements within the header when they are hovered over. */
+
 .logo {
   font-size: 1.5rem;
 }
+
+/* This sets the font size for the logo class. */
+
 .main-nav{
   font-family: "Audiowide", sans-serif;
     font-weight: 400;
     font-style: normal;
 }
+
+/* This sets the font family, weight, and style for the main-nav class. */
+
 #p1, #p2{
   text-align: center;
   font: 1em sans-serif;
   padding: 1px;
   color:black;
 }
+
+/* This sets the text alignment, font, padding, and color properties for the p1 and p2 IDs. */
+
 header, footer{
     background-color: #2d2dfd;
     color: #eee;
     padding: 1.25em;
 }
+
+/* This sets the background color, color, and padding properties for the header and footer elements. */
+
 button{
   width: 20%;
   color: blue;
 }
 
+/* This sets the width and color properties for the button element. */
 
-/* #container {
-	
-} */
 main{
     padding: 1em;
 }
 
+/* This sets the padding property for the main element. */
+
 a {
     color: #FFFFFF;
   }
-  
-  a:hover {
+
+/* This sets the color property for all anchor elements. */
+
+a:hover {
     color: #ce2f2f;
   }
+
+/* This sets the color property for all anchor elements when they are hovered over. */
+
 /* Class for making YouTube/Vimeo videos responsive */
 
 figure.responsive {
     position: relative;
-    padding-bottom: 56.25%;  /* 16:9 */
-    height: 0px;
-    overflow: hidden;
-    max-width: 100%;
-}
-
-figure.responsive iframe {
-    position: absolute;
-    top: 0px;
-    left: 0px;
-    width: 100%;
-    height: 100%;
-}
-
-
-
-/* A better looking default horizontal rule */
-hr {
-    display: block;
-    height: 1px;
-    border: 0px;
-    border-top: 1px solid #ccc;
-    margin: 1em 0px;
-    padding: 0px;
-}
-
-
-
-/* ========================================
-MEDIA QUERIES!
-You can adjust the min-width numbers below, and add as many new media queries as you need.
-======================================== */
-
-/* Minimum width for iPads and tablets.  */
-@media all and (min-width: 481px) {
-	
-	
-	
-	
-} /* closes 481px+ */
-
-
-
-/* Minimum width for laptops. */
-@media all and (min-width: 769px) {
-	
-	
-	
-	
-} /* closes 769px+ */
-
-
-
-/* Minimum width for desktop screens. */
-@media all and (min-width: 1024px) {
-	
-} /* closes 1024px+ */
-
-
-
-
-
+    padding-bottom
