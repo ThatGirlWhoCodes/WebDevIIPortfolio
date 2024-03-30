@@ -1,168 +1,117 @@
 /* Basic CSS resets -- leveling slight inconsistencies in browsers */
 @import url('https://fonts.googleapis.com/css2?family=Honk&display=swap');
 
-*{
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    background-color:rgb(245, 238, 186);
-}
-html, body {
-	height:100%;
+/*
+* Box-sizing is set to border-box to include padding and border in the element's total width and height.
+* This helps to avoid inconsistencies in different browsers.
+*/
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  background-color:rgb(245, 238, 186);
 }
 
+/* Setting 100% height for html and body elements ensures that the full viewport height is utilized. */
+html,
+body {
+  height: 100%;
+}
+
+/*
+* Standard text-settings for html element:
+* - Font-size: 1em is the base font size for the document.
+* - Line-height: 1.4em is the vertical spacing between lines of text.
+*/
 html {
-		/* Standard text-settings below */
-	font-size: 1em;
-    line-height: 1.4em;
+  font-size: 1em;
+  line-height: 1.4em;
 }
 
 /* Mobile First CSS: we'll design for phone sizes first, then add media queries for tablets and desktop computers later */
 
 main {
-	width: auto;
-    text-align: left;
-    padding: 1rem;
+  /*
+  * Width: auto adjusts the width of the main element according to the content.
+  * Text-align: left aligns the text to the left.
+  * Padding: 1rem provides equal spacing around the content.
+  */
+  width: auto;
+  text-align: left;
+  padding: 1rem;
+}
 
-}
-header{
-    text-align: center;
+header {
+  /* Text-align: center horizontally centers the text. */
+  text-align: center;
 }
 
-h2{
-    padding: .5rem;
+h2 {
+  /* Padding: .5rem adds spacing around the heading. */
+  padding: .5rem;
 }
-.titleOfArticle{
-    font-size: 4rem;
-    font-family: 'Honk', system-ui;
-    padding: 4rem; 
-    text-align: center;
+
+.titleOfArticle {
+  /*
+  * Font-size: 4rem sets the font size of the title.
+  * Font-family: 'Honk', system-ui applies the 'Honk' font, and falls back to the system font if 'Honk' is not available.
+  * Padding: 4rem adds spacing around the title.
+  * Text-align: center horizontally centers the title.
+  */
+  font-size: 4rem;
+  font-family: 'Honk', system-ui;
+  padding: 4rem;
+  text-align: center;
 }
-#mainTopic{
-    color: #000;
-    padding: .5rem;
-    font-size: 2rem;
-    text-align: center;
-    line-height: 1em;
+
+#mainTopic {
+  /*
+  * Color: #000 sets the text color to black.
+  * Padding: .5rem adds spacing around the text.
+  * Font-size: 2rem sets the font size of the main topic.
+  * Text-align: center horizontally centers the main topic.
+  * Line-height: 1em sets the vertical spacing between lines of text.
+  */
+  color: #000;
+  padding: .5rem;
+  font-size: 2rem;
+  text-align: center;
+  line-height: 1em;
 }
-.workCited{
-    padding: .5em;
-    line-height: 1.75;
-    margin: 1em;
-    font-size: 1rem;
+
+.workCited {
+  /*
+  * Padding: .5em adds spacing around the work cited section.
+  * Line-height: 1.75 sets the vertical spacing between lines of text.
+  * Margin: 1em adds spacing around the work cited section.
+  * Font-size: 1rem sets the font size of the work cited.
+  */
+  padding: .5em;
+  line-height: 1.75;
+  margin: 1em;
+  font-size: 1rem;
 }
-img{
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 50%;
-    padding: 0;
+
+img {
+  /*
+  * Display: block makes the image a block-level element, ensuring that it takes up the full width available.
+  * Margin-left: auto and margin-right: auto horizontally center the image.
+  * Width: 50% sets the width of the image to 50% of its parent container.
+  * Padding: 0 removes any padding around the image.
+  */
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  padding: 0;
 }
+
 #container {
-	padding: 3rem;
-}
-.p6{
-    color: #000;
-    padding: 2rem;
-    font-size: 2rem;
-    text-align: center;
-    line-height: 1em;
-}
-p{
-    line-height: 1.75;
-    margin: 1em;
-    font-size: 1.25rem;
-}
-.back-to-top {
-    /* position properties */
-    text-decoration: none;
-    padding: 1em;
-    background-color: #444a;
-    border-radius: 0.5em;
-    font-weight: bold;
-    line-height: 0.5;
-    font-family: "Quicksand", sans-serif;
-    font-size: 1rem;
-    color: white;
-  }
-.back-to-top:hover {
-    background-color: #444f;
-    color: white;
-}
-footer {
-    text-align: center;
-  }
-  
-footer p {
-    margin: 0;
-  }
-
-/* Class for making YouTube/Vimeo videos responsive */
-
-figure.responsive {
-    position: relative;
-    padding-bottom: 56.25%;  /* 16:9 */
-    height: 0px;
-    overflow: hidden;
-    max-width: 100%;
+  /* Padding: 3rem adds spacing around the container. */
+  padding: 3rem;
 }
 
-figure.responsive iframe {
-    position: absolute;
-    top: 0px;
-    left: 0px;
-    width: 100%;
-    height: 100%;
-}
-
-
-
-/* A better looking default horizontal rule */
-hr {
-    display: block;
-    height: 1px;
-    border: 0px;
-    border-top: 1px solid #ccc;
-    margin: 1em 0px;
-    padding: 0px;
-}
-
-
-
-/* ========================================
-MEDIA QUERIES!
-You can adjust the min-width numbers below, and add as many new media queries as you need.
-======================================== */
-
-/* Minimum width for iPads and tablets.  */
-@media all and (min-width: 481px) {
-	
-	
-	
-	
-} /* closes 481px+ */
-
-
-
-/* Minimum width for laptops. */
-@media all and (min-width: 769px) {
-	
-	
-	
-	
-} /* closes 769px+ */
-
-
-
-/* Minimum width for desktop screens. */
-@media all and (min-width: 1024px) {
-	
-	
-	
-	
-} /* closes 1024px+ */
-
-
-
-
-
+.p6 {
+  /*
+  * Color: #000 sets the text color to black.
+  * Padding: 2
