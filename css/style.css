@@ -2,111 +2,147 @@
 @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;800&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Rock+Salt&display=swap');
 
+/* Reset margins and padding for html and body elements */
 html, body {
 	margin:0px;
 	padding:0px;
 	height:100%;
 }
+
+/* Style figure and img elements within figure for consistent sizing */
 figure img{
   width: 5%;
 }
+
+/* Set standard text-settings for html element */
 html {
-	/* Standard text-settings below */
 	font-size: 1em;
   line-height: 1.4em;
   font-family: 'Orbitron', Impact, sans-serif;
 } 
+
 /* Mobile First CSS: we'll design for phone sizes first, then add media queries for tablets and desktop computers later */
 
+/* Set background color and size for body element */
 body {
-  /* this is the background image of me */
   background: red;
   background-size: cover;
 }
-  /* HEADER */
 
+/* Style header h1 element */
 header h1{
-  /* number is percentage of vp width, this steches font if frame is re-scaled */
   font-size: 4.2vw;
   font-family: 'Orbitron', Impact, sans-serif;
   font-weight: 800;
   color: white;
 }
+
+/* Style header h2 element */
 header h2{
   font-size: 3vw;
   font-family: 'Orbitron', Impact, sans-serif;
   font-weight: 400;
     color: white;
 }
+
+/* Style header, footer elements */
 header, footer{
     padding: 1em;
     color: #fff;
   }
-  header figure {
+
+/* Style header figure element */
+header figure {
     margin: 0px;
   }
-  header p{
+
+/* Style header p element */
+header p{
   font-size: 2vw;
-  font-family: 'Orbitron', Impact, sans-serif;
   color: white;
   }
-  #social-media-icons{
+
+/* Style #social-media-icons and its children elements */
+#social-media-icons{
     display: flex;
     margin: 0 auto;
   }
-  #social-media-icons a{
+
+#social-media-icons a{
     display: block;
     margin:  0 5px;
   }
-  #social-media-icons img{
+
+#social-media-icons img{
     padding-left: 1em;
     width: 30px;
     height: 30px;
   }
-  main img{
+
+/* Style main img element */
+main img{
     width: 100%;
   }
-  figcaption{
+
+/* Style figcaption element */
+figcaption{
     font-size: .65rem;
     color: white;
     padding-bottom: 4rem;
   }
+
+/* Style main p element */
 main p{
   margin: 1em;
   padding: 8px;
   color: #fff;
 }
+
+/* Style main p element with bold font-weight */
 main p b{
   font-family: 'Rock Salt', cursive;
   font-size: 2rem;
   margin: 1rem;
 }
-  nav ul {
+
+/* Style nav ul element */
+nav ul {
     list-style: none;
     padding-left: 0px;
   }
-  #click-here{
+
+/* Style #click-here and its children elements */
+#click-here{
     text-decoration: none;
   }
+
 #click-here a:hover{
   color: black;
 }
-  a{
+
+/* Style a element */
+a{
     text-decoration: none;
     color: white;
   }
-  #disclaimer{
+
+/* Style #disclaimer element */
+#disclaimer{
     font-size: 1rem;
     padding-top: 4rem;
     text-align: center;
   }
-  #font-change{
+
+/* Style #font-change element */
+#font-change{
     font-family: 'Rock Salt', cursive;
     font-size: 2rem;
     line-height: 1.5;
     text-align: center;
     padding-top: 3rem;
   }
+
+/* Style .gallery and its children elements */
 .gallery{
   font-size: .75rem;
   display: grid;
@@ -114,13 +150,17 @@ main p b{
   gap: 15px;
   padding: 0rem 5rem 15rem 5rem;
 }
+
+/* Style .gallery img element */
 .gallery img{
   width: 100%;
   height: 100%;
   object-fit: cover;
   border:10px solid black;
 }
-  nav ul li a{
+
+/* Style nav ul li a element */
+nav ul li a{
     border: 1px solid black;
     display: block;
     text-decoration: none;
@@ -131,12 +171,13 @@ main p b{
     background-color: rgba(0,0,0, 0.4);
     margin: 5px;
   }
-  nav ul li a:hover{
+
+/* Style nav ul li a element on hover */
+nav ul li a:hover{
     background: black;
   }
 
-/* Class for making YouTube/Vimeo videos responsive */
-
+/* Style figure.responsive element */
 figure.responsive {
     position: relative;
     padding-bottom: 56.25%;  /* 16:9 */
@@ -145,6 +186,7 @@ figure.responsive {
     max-width: 100%;
 }
 
+/* Style figure.responsive iframe element */
 figure.responsive iframe {
     position: absolute;
     top: 0px;
@@ -153,7 +195,7 @@ figure.responsive iframe {
     height: 100%;
 }
 
-/* A better looking default horizontal rule */
+/* Style hr element */
 hr {
     display: block;
     height: 1px;
@@ -162,55 +204,12 @@ hr {
     margin: 1em 0px;
     padding: 0px;
 }
+
+/* Style footer element */
 footer {
   text-align: center;
 }
 
 
 
-/* ========================================
-MEDIA QUERIES!
-You can adjust the min-width numbers below, and add as many new media queries as you need.
-======================================== */
-
-/* Minimum width for iPads and tablets.  */
-@media all and (min-width: 481px) {
-	
-	
-} /* closes 481px+ */
-
-
-
-/* Minimum width for laptops. */
-@media all and (min-width: 769px) {
-	
-  #two-column{
-    display: flex;
-  }
-  nav{
-    flex: 1;
-  }
-  main{
-    flex: 2;
-  }
-  nav ul li a{
-    font-size: 1em;
-  }
- 
-} /* closes 769px+ */
-
-
-
-/* Minimum width for desktop screens. */
-@media all and (min-width: 1024px) {
-	
-	
-  main{
-    flex: 3;
-  }
-} /* closes 1024px+ */
-
-
-
-
-
+/*

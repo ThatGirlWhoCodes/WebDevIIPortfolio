@@ -1,10 +1,10 @@
 /* FONT FAMILIES */
-/* logo font */
+/* Import 'Anta' font for logo */
 @import url('https://fonts.googleapis.com/css2?family=Anta&display=swap');
-/* dislcaimer font */
+/* Import 'Annapurna SIL' font for disclaimer */
 @import url('https://fonts.googleapis.com/css2?family=Annapurna+SIL:wght@400;700&display=swap');
 
-/* keyframe imports */
+/* Keyframe imports */
 @import 'animate.css';
 
 /* Basic CSS resets -- leveling slight inconsistencies in browsers */
@@ -19,12 +19,15 @@ html {
 	font-size: 1em;
     line-height: 1.4em;
 }
+
 header, footer{
     color: black;
 }
+
 body:hover{
   background-color: #eaffc1;
 }
+
 /* Mobile First CSS: we'll design for phone sizes first, then add media queries for tablets and desktop computers later */
 header{
     text-align: center;
@@ -33,6 +36,8 @@ header{
     top: 0;
     left: 0;
   }
+
+/* H1 header hover effect */
 header h1:hover{
     color: rgb(26, 188, 156);
     animation: grow-and-shrink 2000ms;
@@ -40,10 +45,11 @@ header h1:hover{
     animation-iteration-count: infinite;
     animation-direction: alternate;
 }
-  
+
 a{
     font-size: 1.25rem;
 }
+
 a:hover{
     background: rgb(26, 188, 156);
     background: -moz-linear-gradient(-45deg, rgba(26, 188, 156, 1) 0%, rgb(24, 119, 132) 100%);
@@ -53,9 +59,11 @@ a:hover{
     border: dotted white;
     border-radius: 50%;
 }
+
 section{
   padding: 1em;
 }
+
 footer{
   padding: 1em;
     position:static;
@@ -63,32 +71,40 @@ footer{
     top: 0;
     left: 0; 
 }
+
 nav{
     padding: 2rem;
 }
+
 header a{
     text-decoration: none;
     color: black;
 }
+
 body {
 	background-color:azure;
 }
+
 h1, h2{
     font-family: "Anta", sans-serif;
     font-weight: 400;
     font-style: normal;
 }
+
 h1{
     font-size: 5rem;
     font-weight: 700;
 }
+
 #container {
 	animation-delay: 25s;
   animation: snowglobe 10s forwards, settle 10s forwards; 
 }
+
 img{
     width: 100%;
 }
+
 button{
     background-color: none;
     border-radius: 15px 15px;
@@ -97,6 +113,7 @@ button{
     background: -webkit-linear-gradient(-45deg, rgba(26, 188, 156, 1) 0%,rgb(24, 119, 132) 100%);
     background: linear-gradient(135deg, rgba(26, 188, 156, 1) 0%, rgb(24, 119, 132) 100%);
 }
+
 button:hover{
     animation: wiggle 5s linear infinite ;
     background: rgb(26, 188, 156);
@@ -106,198 +123,24 @@ button:hover{
     border: dotted white;
     border-radius: 50%;
 }
+
 #disclaimer{
     font-family: "Annapurna SIL", serif;
     font-weight: 400;
     font-style: normal;
 }
+
 .pEd{
   padding: 1rem;
   text-decoration: none;
 }
+
 footer{
     font-family: 'Times New Roman', Times, serif;
     font-size: .65em;
 }
+
 .back-to-top {
     text-decoration: none;
     padding: 1em;
-    background-color: rgb(26, 188, 156);
-    border-radius: 0.5em;
-    font-weight: bold;
-    line-height: 0.5;
-    font-family: "Quicksand", sans-serif;
-    font-size: 1rem;
-    color: white;
-  }
-  
-  .back-to-top:hover {
-    background-color: #444f;
-    color: white;
-  }
-
-/* Class for making YouTube/Vimeo videos responsive */
-
-figure.responsive {
-    position: relative;
-    padding-bottom: 56.25%;  /* 16:9 */
-    height: 0px;
-    overflow: hidden;
-    max-width: 100%;
-}
-
-figure.responsive iframe {
-    position: absolute;
-    top: 0px;
-    left: 0px;
-    width: 100%;
-    height: 100%;
-}
-
-
-
-/* A better looking default horizontal rule */
-hr {
-    display: block;
-    height: 1px;
-    border: 0px;
-    border-top: 1px solid #ccc;
-    margin: 1em 0px;
-    padding: 0px;
-}
-
-/* KEY FRAMES */
-/* 1. main nav  */
-@keyframes hvr-wobble-horizontal {
-    16.65% {
-      -webkit-transform: translateX(8px);
-      transform: translateX(8px);
-    }
-    33.3% {
-      -webkit-transform: translateX(-6px);
-      transform: translateX(-6px);
-    }
-    49.95% {
-      -webkit-transform: translateX(4px);
-      transform: translateX(4px);
-    }
-    66.6% {
-      -webkit-transform: translateX(-2px);
-      transform: translateX(-2px);
-    }
-    83.25% {
-      -webkit-transform: translateX(1px);
-      transform: translateX(1px);
-    }
-    100% {
-      -webkit-transform: translateX(0);
-      transform: translateX(0);
-    }
-  }
-  .hvr-wobble-horizontal {
-    display: inline-block;
-    vertical-align: middle;
-    -webkit-transform: perspective(1px) translateZ(0);
-    transform: perspective(1px) translateZ(0);
-    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
-  }
-  .hvr-wobble-horizontal:hover, .hvr-wobble-horizontal:focus, .hvr-wobble-horizontal:active {
-    -webkit-animation-name: hvr-wobble-horizontal;
-    animation-name: hvr-wobble-horizontal;
-    -webkit-animation-duration: 1s;
-    animation-duration: 1s;
-    -webkit-animation-timing-function: ease-in-out;
-    animation-timing-function: ease-in-out;
-    -webkit-animation-iteration-count: 1;
-    animation-iteration-count: 1;
-  }
-
-  /* 2. Image */
-  @keyframes wiggle {
-    0%, 7% {
-      transform: rotateZ(0);
-    }
-    15% {
-      transform: rotateZ(-15deg);
-    }
-    20% {
-      transform: rotateZ(10deg);
-    }
-    25% {
-      transform: rotateZ(-10deg);
-    }
-    30% {
-      transform: rotateZ(6deg);
-    }
-    35% {
-      transform: rotateZ(-4deg);
-    }
-    40%, 100% {
-      transform: rotateZ(0);
-    }
-  }
-  /* 3. h1 header  */
-  @keyframes grow-and-shrink {
-    0% {
-      transform: scale(1);
-    }
-    100% {
-      transform: scale(1.5);
-    }
-  }
-
-  /* crazy transformation */
-  @keyframes snowglobe {
-    0% {
-      transform: rotate(0deg);
-    }
-    100% {
-      transform: rotate(360deg);
-    }
-  }
-  
-  @keyframes settle {
-    0% {
-      /* initial state */
-    }
-    100% {
-      /* final state */
-    }
-  }
-/* ========================================
-MEDIA QUERIES!
-You can adjust the min-width numbers below, and add as many new media queries as you need.
-======================================== */
-
-/* Minimum width for iPads and tablets.  */
-@media all and (min-width: 481px) {
-	
-} /* closes 481px+ */
-
-
-
-/* Minimum width for laptops. */
-@media all and (min-width: 769px) {
-	
-	
-	
-	
-} /* closes 769px+ */
-
-
-
-/* Minimum width for desktop screens. */
-@media all and (min-width: 1024px) {
-	
-	
-	img{
-    width: 100vw;
-    height: 100vh;
-    }
-	
-} /* closes 1024px+ */
-
-
-
-
-
+    background-color: rgb(26, 188, 1
