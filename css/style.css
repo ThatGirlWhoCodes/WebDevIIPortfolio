@@ -11,7 +11,7 @@ html, body {
 
 /* Style figure and img elements within figure for consistent sizing */
 figure img{
-  width: 5%;
+  width: 100%;
 }
 
 /* Set standard text-settings for html element */
@@ -209,4 +209,23 @@ hr {
 footer {
   text-align: center;
 }
-/*
+
+
+@media all and (min-width: 769px){
+  #two-column{
+    display: flex;
+  }
+  nav{
+    flex: 1;
+  }
+  main{
+    flex: 2;
+  }
+}
+
+@media all and (min-width: 1024px){
+
+  main{
+    flex: 3;
+  }
+}
