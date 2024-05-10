@@ -1,0 +1,39 @@
+body {
+    font-family: "neue-haas-grotesk-display", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    background-color: #d2e6ef;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+nav {
+    position: fixed;
+    top: 0;
+    background-color: #bddcec;
+}
+h1{
+    padding-top: 1em;
+    padding-bottom: 0;
+    margin: 0;
+}
+.reflectionBody{
+    /* background-color: #bddcec; */
+    margin: 0;
+    padding: 0;
+}
+.reflectionContainer{
+    margin-top: 10px;
+    text-align: center;
+}
+.reflectionPs{
+    margin-top: 50px;
+    color: black;
+    padding: 1em;
+}
+
+
+footer {
+    background-color: #bddcec;
+    margin: 0;
+}
